@@ -11,7 +11,7 @@ for now, the goal is to
 1. from this root dir, run `poetry build`
 2. from your project, run `pip install path/to/milfaker/dist/milfaker-0.1.0-py3-none-any.whl`
 
-(we can add it to PyPi later if we want to)
+(can publish to PyPi once it's ready)
 
 
 ## usage
