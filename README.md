@@ -23,7 +23,7 @@ from milfaker.providers import PaygradeProvider
 my_faker = Faker()
 my_faker.add_provider(PaygradeProvider)
 
-paygrade = my_faker.paygrade(echelon='officer')
+paygrade = my_faker.paygrade(grade='enlisted')
 ```
 
 ### use the wrapper
@@ -31,5 +31,5 @@ paygrade = my_faker.paygrade(echelon='officer')
 from milfaker.wrapper import MilitaryFaker
 
 my_faker = MilitaryFaker()
-paygrade = my_faker.paygrade(echelon='officer')
+paygrade = my_faker.paygrade(grade='enlisted')
 ```
