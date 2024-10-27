@@ -1,7 +1,7 @@
 # milfaker
 this is a simple library for generating fake military data
 
-in an ideal world, this library could mature and be merged into the [Faker package](https://pypi.org/project/Faker/)
+in an ideal world, this could mature and be merged into the [Faker package](https://pypi.org/project/Faker/)
 
 for now, the goal is to
 - define military specific providers which can be imported and added to an existing faker instance
