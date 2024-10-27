@@ -1,3 +1,9 @@
-pyrightconfig.json
-dist
+# tooling
 .coverage
+**/__pycache__
+.pytest_cache
+.ruff_cache
+pyrightconfig.json
+
+# builds
+dist
