@@ -1,9 +1,9 @@
 # sources:
-    # https://en.wikipedia.org/wiki/List_of_United_States_Army_careers
-    # https://en.wikipedia.org/wiki/List_of_United_States_Marine_Corps_MOS
-    # https://en.wikipedia.org/wiki/List_of_United_States_Navy_ratings
-    # https://en.wikipedia.org/wiki/Air_Force_Specialty_Code
-    # https://www.spaceforce.mil/LinkClick.aspx?fileticket=csSHRIrRU8c%3D&portalid=1&timestamp=1655211268589
+# https://en.wikipedia.org/wiki/List_of_United_States_Army_careers
+# https://en.wikipedia.org/wiki/List_of_United_States_Marine_Corps_MOS
+# https://en.wikipedia.org/wiki/List_of_United_States_Navy_ratings
+# https://en.wikipedia.org/wiki/Air_Force_Specialty_Code
+# https://www.spaceforce.mil/LinkClick.aspx?fileticket=csSHRIrRU8c%3D&portalid=1&timestamp=1655211268589
 
 ARMY_ENLISTED_POSITIONS = {
     "00F": "MOS Immaterial NGB",
@@ -503,7 +503,7 @@ ARMY_OFFICER_POSITIONS = {
     "92D": "Aerial Delivery and Materiel",
 }
 
-M_ENLISTED_POSITIONS = {
+MARINE_ENLISTED_POSITIONS = {
     "0100": "Basic Administrative Marine",
     "0111": "Administrative Specialist",
     "0147": "Equal Opportunity Advisor",
@@ -756,8 +756,6 @@ M_ENLISTED_POSITIONS = {
     "8991": "Sergeant Major of the Marine Corps",
     "8999": "Sergeant Major/First Sergeant",
     "9051": "Graves Registration Specialist",
-    "9900": "General Service Marine",
-    "9051": "Graves Registration Specialist",
     "9811": "Member, The President's Own, United States Marine Band",
     "9812": "Member, The Commandant's Own, U.S. Marine Drum & Bugle Corps",
     "9900": "General Service Marine",
@@ -775,17 +773,7 @@ M_ENLISTED_POSITIONS = {
     "9991": "Sergeant Major of the Marine Corps",
     "9999": "Sergeant Major-First Sergeant",
 }
-M_OFFICER_POSITIONS = {
-    "0101": "Basic Manpower Officer",
-    "0102": "Manpower Officer",
-    "0149": "Substance Abuse Control Officer",
-    "0160": "Postal Officer",
-    "0170": "Personnel Officer",
-    "0180": "Adjutant",
-    "0202": "Intelligence Officer",
-    "0203": "Ground Intelligence Officer",
-    "0204": "Counterintelligence/Human Source Intelligence Officer",
-    "0205": "Intelligence Operations and Fusion Warrant Officer",
+MARINE_OFFICER_POSITIONS = {
     "0101": "Basic Manpower Officer",
     "0102": "Manpower Officer",
     "0149": "Substance Abuse Control Officer",
@@ -1003,7 +991,7 @@ NAVY_ENLISTED_POSITIONS = {
     "SW": "Steelworker",
     "TM": "Torpedoman's Mate",
     "UT": "Utilitiesman",
-    "YN": "Yeoman"
+    "YN": "Yeoman",
 }
 NAVY_OFFICER_POSITIONS = {
     "CMDCM": "Command Master Chief Petty Officer",
@@ -2001,4 +1989,26 @@ SPACE_FORCE_OFFICER_POSITIONS = {
     "17S": "Cyberspace Effects Operations",
     "62E": "Developmental Engineer",
     "63A": "Acquisition Manager",
+}
+
+POSITIONS = {
+    "Enlisted": {
+        "Army": ARMY_ENLISTED_POSITIONS,
+        "Marine Corps": MARINE_ENLISTED_POSITIONS,
+        "Navy": NAVY_ENLISTED_POSITIONS,
+        "Air Force": AIR_FORCE_ENLISTED_POSITIONS,
+        "Space Force": SPACE_FORCE_ENLISTED_POSITIONS,
+    },
+    "Warrant Officer": {
+        "Army": ARMY_WARRANT_OFFICER_POSITIONS,
+        "Marine Corps": MARINE_OFFICER_POSITIONS,
+        "Navy": NAVY_OFFICER_POSITIONS,
+    },
+    "Officer": {
+        "Army": ARMY_OFFICER_POSITIONS,
+        "Marine Corps": MARINE_OFFICER_POSITIONS,
+        "Navy": NAVY_OFFICER_POSITIONS,
+        "Air Force": AIR_FORCE_OFFICER_POSITIONS,
+        "Space Force": SPACE_FORCE_OFFICER_POSITIONS,
+    },
 }
