@@ -4,8 +4,8 @@ this is a simple library for generating fake military data
 in an ideal world, this could mature and be merged into the [Faker package](https://pypi.org/project/Faker/)
 
 for now, the goal is to
-- define military specific providers which can be imported and added to an existing faker instance
-- provide a faker wrapper which implements these providers
+- define a military specific provider which can be imported and added to an existing faker instance
+- provide a ready-to-go faker wrapper which implements this provider
 
 ## install
 1. from this root dir, run `poetry build`
@@ -15,15 +15,15 @@ for now, the goal is to
 
 
 ## usage
-### use specific providers
+### use the provider
 ```python
 import faker
-from milfaker.providers import PaygradeProvider
+from milfaker.providers import MilitaryProvider
 
 my_faker = Faker()
-my_faker.add_provider(PaygradeProvider)
+my_faker.add_provider(MilitaryProvider)
 
-paygrade = my_faker.paygrade(grade='enlisted')
+paygrade = my_faker.rank(branch='Army', rank_tier='Enlisted')
 ```
 
 ### use the wrapper
@@ -31,5 +31,5 @@ paygrade = my_faker.paygrade(grade='enlisted')
 from milfaker.wrapper import MilitaryFaker
 
 my_faker = MilitaryFaker()
-paygrade = my_faker.paygrade(grade='enlisted')
+paygrade = my_faker.rank(branch='Army', echelon='Enlisted')
 ```

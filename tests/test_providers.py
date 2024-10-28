@@ -1,12 +1,12 @@
 import pytest
 import faker
-from milfaker.providers import sample_provider
+from milfaker.providers import MilitaryProvider
 
 
 @pytest.fixture
 def faker_fixture():
     fake = faker.Faker()
-    fake.add_provider(sample_provider)
+    fake.add_provider(MilitaryProvider)
     return fake
 
 
@@ -15,8 +15,13 @@ def num_samples():
     return 10
 
 
-def test_sample(faker_fixture, num_samples):
+def test_branch(faker_fixture, num_samples):
     for _ in range(num_samples):
-        sample = faker_fixture.sample()
-        assert isinstance(sample, str)
-        assert sample in sample_provider.elements
+        simple_branch = faker_fixture.military_branch(simple=True)
+        assert isinstance(simple_branch, str)
+        assert len(simple_branch.split(" ")) <= 2
+
+    for _ in range(num_samples):
+        complex_branch = faker_fixture.military_branch(simple=False)
+        assert isinstance(complex_branch, str)
+        assert len(complex_branch.split(" ")) >= 2

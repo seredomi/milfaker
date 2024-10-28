@@ -13,7 +13,13 @@ def num_samples():
     return 10
 
 
-def test_sample(mil_faker, num_samples):
+def test_branch(mil_faker, num_samples):
     for _ in range(num_samples):
-        sample = mil_faker.sample()
-        assert isinstance(sample, str)
+        simple_branch = mil_faker.military_branch(simple=True)
+        assert isinstance(simple_branch, str)
+        assert len(simple_branch.split(" ")) <= 2
+
+    for _ in range(num_samples):
+        complex_branch = mil_faker.military_branch(simple=False)
+        assert isinstance(complex_branch, str)
+        assert len(complex_branch.split(" ")) >= 2

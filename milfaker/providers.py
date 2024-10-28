@@ -1,5 +1,11 @@
-from faker.providers import DynamicProvider
+from faker.providers import BaseProvider
 
-sample_provider = DynamicProvider(
-    provider_name="sample", elements=["sample1", "sample2", "sample3"]
-)
+from milfaker.data.misc import BRANCHES
+
+
+class MilitaryProvider(BaseProvider):
+    def military_branch(self, simple=False):
+        if simple:  # return 'Army', or 'Marine Corps', etc.
+            return self.random_element(BRANCHES.keys())
+        else:  # first pick a branch, then a sub-branch like 'Army Active Duty'
+            return self.random_element(self.random_element(BRANCHES.values()))
