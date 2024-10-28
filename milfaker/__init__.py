@@ -181,6 +181,7 @@ PAYGRADES = {
 
 # sources:
     # https://en.wikipedia.org/wiki/List_of_United_States_Army_careers
+    # https://en.wikipedia.org/wiki/List_of_United_States_Marine_Corps_MOS
 ENLISTED_POSITIONS = {
     "Army": {
         "00F": "MOS Immaterial NGB",
@@ -656,6 +657,67 @@ ENLISTED_POSITIONS = {
         "9972": "Aircrew Trainee",
         "9991": "Sergeant Major of the Marine Corps",
         "9999": "Sergeant Major-First Sergeant",
+    },
+    "Navy": {
+        "AB": "Aviation Boatswain's Mate",
+        "AC": "Air Traffic Controller",
+        "AD": "Aviation Machinist's Mate",
+        "AE": "Aviation Electrician's Mate",
+        "AG": "Aerographer's Mate",
+        "AM": "Aviation Structural Mechanic",
+        "AO": "Aviation Ordnanceman",
+        "AS": "Aviation Support Equipment Technician",
+        "AT": "Aviation Electronics Technician",
+        "AW": "Naval Aircrewman",
+        "AZ": "Aviation Maintenance Administrationman",
+        "BM": "Boatswain's Mate",
+        "BU": "Builder",
+        "CE": "Construction Electrician",
+        "CM": "Construction Mechanic",
+        "CS": "Culinary Specialist",
+        "CT": "Cryptologic Technician",
+        "CWT": "Cyber Warfare Technician",
+        "DC": "Damage Controlman",
+        "EA": "Engineering Aide",
+        "EM": "Electrician's Mate",
+        "EN": "Engineman",
+        "EO": "Equipment Operator",
+        "EOD": "Explosive Ordnance Disposal",
+        "ET": "Electronics Technician",
+        "FC": "Fire Controlman",
+        "FT": "Fire Control Technician",
+        "GM": "Gunner's Mate",
+        "GS": "Gas Turbine System Technician",
+        "HM": "Hospital Corpsman",
+        "HT": "Hull Maintenance Technician",
+        "IC": "Interior Communications Electrician",
+        "IS": "Intelligence Specialist",
+        "IT": "Information Systems Technician",
+        "LN": "Legalman",
+        "LS": "Logistics Specialist",
+        "MA": "Master-at-Arms",
+        "MC": "Mass Communication Specialist",
+        "MM": "Machinist's Mate",
+        "MN": "Mineman",
+        "MR": "Machinery Repairman",
+        "MT": "Missile Technician",
+        "MU": "Musician",
+        "NC": "Navy Counselor",
+        "ND": "Navy Diver",
+        "OS": "Operations Specialist",
+        "PR": "Aircrew Survival Equipmentman",
+        "PS": "Personnel Specialist",
+        "QM": "Quartermaster",
+        "RP": "Religious Program Specialist",
+        "RS": "Retail Services Specialist",
+        "RW": "Robotics Warfare Specialist",
+        "SB": "Special Warfare Boat Operator",
+        "SO": "Special Warfare Operator",
+        "ST": "Sonar Technician",
+        "SW": "Steelworker",
+        "TM": "Torpedoman's Mate",
+        "UT": "Utilitiesman",
+        "YN": "Yeoman"
     }
 }
 WARRANT_OFFICER_POSITIONS = {
@@ -1123,4 +1185,9 @@ OFFICER_POSITIONS = {
         "9959": "Acquisition Management Professional",
         "9986": "Joint Terminal Attack Controller",
     },
+    "Navy": {
+        "CMDCM": "Command Master Chief Petty Officer",
+        "FLTCM": "Fleet Command Master Chief Petty Officer",
+        "FORCM": "Force Command Master Chief Petty Officer",
+    }
 }
