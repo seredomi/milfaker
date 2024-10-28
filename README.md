@@ -1,7 +1,7 @@
 # milfaker
 this is a simple library for generating fake military data
 
-in an ideal world, this library could mature and be merged into the [Faker package](https://pypi.org/project/Faker/)
+in an ideal world, this could mature and be merged into the [Faker package](https://pypi.org/project/Faker/)
 
 for now, the goal is to
 - define a military specific provider which can be imported and added to an existing faker instance
@@ -11,7 +11,7 @@ for now, the goal is to
 1. from this root dir, run `poetry build`
 2. from your project, run `pip install path/to/milfaker/dist/milfaker-0.1.0-py3-none-any.whl`
 
-(can be published to PyPi when it's ready)
+(can publish to PyPi once it's ready)
 
 
 ## usage
